@@ -3,6 +3,7 @@ This is a 2D nevigation domain generator, which are based on simple simulator ra
 
 ## Components
 This code has 3 components.
+
 1. 2D Nevigation Domain Generator
 2. 2D Resampling Based Explorer
 3. Deep Network Domain Transition Simulator(For fast simulation, when domain not availiable for planner)
