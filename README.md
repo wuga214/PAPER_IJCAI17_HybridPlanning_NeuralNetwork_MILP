@@ -2,7 +2,7 @@
 This is a 2D nevigation domain generator, which are based on simple simulator rather than domain language(RDDL perhaps the only domain language can describe this simple domain). 
 
 ## Components
-This code has 3 components.
+This code has 5 components.
 
 1. 2D Nevigation Domain Generator
 2. 2D Resampling Based Explorer
