@@ -1,7 +1,4 @@
-
-# MILP optimization control with deep network transition
-
-## Simple Continuous Planning Domain Generator.
+# Simple Continuous Planning Domain Generator.
 This is a 2D nevigation domain generator, which are based on simple simulator rather than domain language(RDDL perhaps the only domain language can describe this simple domain). 
 
 ## Components
