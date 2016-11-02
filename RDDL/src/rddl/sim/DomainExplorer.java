@@ -169,8 +169,10 @@ public class DomainExplorer {
 	 * -I: instance name
 	 * -V: visualizer name
 	 * -S: random seed for simulator
-	 * -D: random seed for policy
+	 * -X: random seed for policy
 	 * -K: number of rounds
+	 * -D: output data path
+	 * -L: output label path
 	 */
 	
 	public static void main(String[] args) throws Exception{
@@ -185,6 +187,8 @@ public class DomainExplorer {
 		String instance_name = ArgsParser.getOption("I", args);
 		
 		String state_viz_class_name = "rddl.viz.ValueVectorDisplay";
+		String data_path="";
+		String label_path="";
 		int rand_seed_sim = (int)System.currentTimeMillis(); // 123456
 		int rand_seed_policy = (int)System.currentTimeMillis(); // 123456
 		int rounds = 1;
@@ -193,10 +197,15 @@ public class DomainExplorer {
 			state_viz_class_name = ArgsParser.getOption("V", args);
 		if (ArgsParser.getOptionPos("S",args)!=-1)
 			rand_seed_sim = new Integer(ArgsParser.getOption("S", args));
-		if (ArgsParser.getOptionPos("D",args)!=-1)
-			rand_seed_policy = new Integer(ArgsParser.getOption("D", args));
+		if (ArgsParser.getOptionPos("X",args)!=-1)
+			rand_seed_policy = new Integer(ArgsParser.getOption("X", args));
 		if (ArgsParser.getOptionPos("K",args)!=-1)
 			rounds = new Integer(ArgsParser.getOption("K", args));
+		if (ArgsParser.getOptionPos("D",args)!=-1&&ArgsParser.getOptionPos("L",args)!=-1){
+			data_path=ArgsParser.getOption("D",args);
+			label_path=ArgsParser.getOption("L",args);
+			System.out.println(data_path);
+		}
 		
 		// Load RDDL files
 		RDDL rddl = new RDDL(rddl_file);
@@ -208,7 +217,7 @@ public class DomainExplorer {
 		pol.setRDDL(rddl);
 		ValueVectorDisplay viz = (ValueVectorDisplay)Class.forName(state_viz_class_name).newInstance();
 		DomainExplorer sim = new DomainExplorer(rddl, instance_name,pol,viz);
-		sim.Search(rounds);
+		sim.Search(rounds,data_path,label_path);
 		
 	}
 

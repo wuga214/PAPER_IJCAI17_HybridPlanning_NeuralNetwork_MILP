@@ -54,9 +54,11 @@ public class ValueVectorDisplay extends StateViz {
 		_pLabelOut = getFileHandler(label_path);
 	}
 	
-	public void FinishWritting(){
-		_pDataOut.close();
-		_pLabelOut.close();
+	public void close(){
+		if(_pDataOut!=null&&_pLabelOut!=null){
+			_pDataOut.close();
+			_pLabelOut.close();
+		}
 	}
 	
 	private PrintWriter getFileHandler(String path){
@@ -68,7 +70,7 @@ public class ValueVectorDisplay extends StateViz {
 		    bw = new BufferedWriter(fw);
 		    out = new PrintWriter(bw);
 		} catch (IOException e) {
-		    System.out.println("Cannot open file:"+path);
+		    System.out.println("There is no existing directory for file:"+path);
 		}		
 		return out;
 	}
