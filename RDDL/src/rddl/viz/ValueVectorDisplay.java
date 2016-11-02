@@ -114,14 +114,15 @@ public class ValueVectorDisplay extends StateViz {
 					ArrayList<ArrayList<LCONST>> gfluents = s.generateAtoms(p);										
 					for (int i=0; i<gfluents.size();i++)
 						sb.append(s.getPVariableAssign(p, gfluents.get(i))+((i+1)==gfluents.size()? "" : ","));
+					sb.append(",");
 						
 				} catch (EvalException ex) {
 					sb.append("- could not retrieve assignment " + s + " for " + p + "\n");
 				}
 			}
 		}
-				
-		return sb.toString();
+		String output = sb.toString();		
+		return output.substring(0, output.length()-1);
 	}
 
 }
