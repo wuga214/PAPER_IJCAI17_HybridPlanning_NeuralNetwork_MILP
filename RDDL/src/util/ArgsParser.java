@@ -22,21 +22,21 @@ public class ArgsParser {
 		return -1;
 	}
 	
-	  public static String getOption(String flag, String[] options) throws Exception {		
+	  public static String getOption(String flag, String[] args) throws Exception {		
 		  String newString;
-		  int i = getOptionPos(flag, options);
+		  int i = getOptionPos(flag, args);
 		
 		  if (i > -1) {
-			  if (options[i].equals("-" + flag)) {
-				  if (i + 1 == options.length) {
-					  throw new Exception("No value given for -" + flag + " option.");
+			  if (args[i].equals("-" + flag)) {
+				  if (i + 1 == args.length) {
+					  throw new Exception("Missing value for -" + flag + " option.");
 				  }
-				  options[i] = "";
-				  newString = new String(options[i + 1]);
-				  options[i + 1] = "";
+				  args[i] = "";
+				  newString = new String(args[i + 1]);
+				  args[i + 1] = "";
 				  return newString;
 			  }
-			  if (options[i].charAt(1) == '-') {
+			  if (args[i].charAt(1) == '-') {
 				  return "";
 			  }
 		  }		
