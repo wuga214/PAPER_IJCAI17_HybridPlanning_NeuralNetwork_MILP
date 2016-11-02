@@ -177,7 +177,7 @@ public class DomainExplorer {
 		
 		// TODO Auto-generated method stub
 		if (ArgsParser.getOptionPos("R",args)==-1 ||ArgsParser.getOptionPos("P",args)==-1 || ArgsParser.getOptionPos("I",args)==-1 ) {
-			System.out.println("Please specify domain, policy and instance. \n More information please run: \n	.run rddl.help");
+			System.out.println("Please specify domain, policy and instance. \nMore information please run: \n>>>$./run rddl.help");
 			System.exit(1);
 		}
 		String rddl_file = ArgsParser.getOption("R", args);
