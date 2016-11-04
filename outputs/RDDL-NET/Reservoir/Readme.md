@@ -1,8 +1,11 @@
 File Descriptions
 ===========================
 
-### NetworkFile
+### Network
 Neural Network Weight File
+
+### Network Normalization
+Normalize data before feeding in the network
 
 ### Headers
 Node ID with corresponding state name and terms
