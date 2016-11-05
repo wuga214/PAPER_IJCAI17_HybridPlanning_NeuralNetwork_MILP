@@ -8,8 +8,8 @@ N06,states,rlevel[$t2]
 N07,states,rlevel[$t3]
 N08,states,rlevel[$t4]
 N09,states,rlevel[$sea]
-D50,states,regular,rlevel[$t1]
-D51,states,regular,rlevel[$t2]
-D52,states,regular,rlevel[$t3]
-D53,states,regular,rlevel[$t4]
-D54,states,regular,rlevel[$sea]
+D50,regular,rlevel[$t1],N05
+D51,regular,rlevel[$t2],N06
+D52,regular,rlevel[$t3],N07
+D53,regular,rlevel[$t4],N08
+D54,regular,rlevel[$sea],N09
