@@ -16,9 +16,6 @@ Network intermediate output distribution: mean and std
 ### Data and Label
 The data and label that used to train the network, maybe useful to check
 
-### Reservoir_det
+###Reservoir_det
 This is determinized reservoir description file in RDDL. Please use this file to write the reward function.
-
-### Bayesian Net
-![plt](Bayesian_Net.png?raw=true "Reservoir")
 

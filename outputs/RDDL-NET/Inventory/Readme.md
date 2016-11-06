@@ -1,16 +1,16 @@
 File Descriptions
 ===========================
 
-### Network
+### Network(*)
 Neural Network Weight File
 
-### Network Normalization
+### Network Normalization(*)
 Normalize data before feeding in the network
 
-### Headers
+### Headers(*)
 Node ID with corresponding state name and terms
 
-### Interm_Distribution
+### Interm_Distribution(*)
 Network intermediate output distribution: mean and std
 
 ### Data and Label
@@ -20,5 +20,4 @@ The data and label that used to train the network, maybe useful to check
 This is determinized reservoir description file in RDDL. Please use this file to write the reward function.
 
 ### Bayesian Net
-![plt](Bayesian_Net.png?raw=true "Reservoir")
-
+![plt](Bayesian_Net.png?raw=true "Inventory")
