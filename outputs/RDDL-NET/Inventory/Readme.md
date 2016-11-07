@@ -23,3 +23,6 @@ This is determinized reservoir description file in RDDL. Please use this file to
 
 ### Bayesian Net
 ![plt](Bayesian_Net.png?raw=true "Inventory")
+
+### Training Loss Curve
+![plt](train_curve.png?raw=true "Inventory")
