@@ -1,6 +1,8 @@
 File Descriptions
 ===========================
 
+WARNING: The network trained for this problem is not good. We may add more features(constants) into training scope.
+
 ### Network(*)
 Neural Network Weight File
 
