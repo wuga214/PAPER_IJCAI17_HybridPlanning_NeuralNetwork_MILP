@@ -1,18 +1,18 @@
 File Descriptions
 ===========================
 
-WARNING: The network trained for this problem is not optimal, but good for planner to do test.
+WARNING: The network trained for this problem is not good. We may add more features(constants) into training scope.
 
-### Network
+### Network(*)
 Neural Network Weight File
 
-### Network Normalization(* Reformated)
+### Network Normalization(*)
 Normalize data before feeding in the network
 
-### Headers(* Without adding constraints)
+### Headers(*)
 Node ID with corresponding state name and terms
 
-### Interm_Distribution
+### Interm_Distribution(*)
 Network intermediate output distribution: mean and std
 
 ### Data and Label
