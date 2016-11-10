@@ -25,3 +25,7 @@ This is determinized reservoir description file in RDDL. Please use this file to
 ![plt](Bayesian_Net.png?raw=true "Reservoir")
 ![plt](train_curve.png?raw=true "Reservoir")
 
+### Boosted VS no-Boosted
+![plt](Boosted.png?raw=true "Boosted")
+![plt](withoutboost.png?raw=true "no-Boosted")
+
