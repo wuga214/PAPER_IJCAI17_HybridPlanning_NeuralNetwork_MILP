@@ -1,15 +1,15 @@
-N00,action,flow[$t1],0,rlevel[$t1]
-N01,action,flow[$t2],0,rlevel[$t2]
-N02,action,flow[$t3],0,rlevel[$t3]
-N03,action,flow[$t4],0,rlevel[$t4]
-N04,action,flow[$sea]0,0
+N00,action,flow[$t1]
+N01,action,flow[$t2]
+N02,action,flow[$t3]
+N03,action,flow[$t4]
+N04,action,flow[$sea]
 N05,states,rlevel[$t1]
 N06,states,rlevel[$t2]
 N07,states,rlevel[$t3]
 N08,states,rlevel[$t4]
 N09,states,rlevel[$sea]
-D50,regular,rlevel[$t1],N05
-D51,regular,rlevel[$t2],N06
-D52,regular,rlevel[$t3],N07
-D53,regular,rlevel[$t4],N08
-D54,regular,rlevel[$sea],N09
+D50,regular,states, rlevel[$t1]
+D51,regular,states, rlevel[$t2]
+D52,regular,states, rlevel[$t3]
+D53,regular,states, rlevel[$t4]
+D54,regular,states, rlevel[$sea]
