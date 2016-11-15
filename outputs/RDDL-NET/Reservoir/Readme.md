@@ -26,6 +26,12 @@ This is determinized reservoir description file in RDDL. Please use this file to
 ![plt](train_curve.png?raw=true "Reservoir")
 
 ### Boosted VS no-Boosted
+Boosted MSE
 ![plt](Boosted.png?raw=true "Boosted")
+
+Non-Boosted MSE
 ![plt](withoutboost.png?raw=true "no-Boosted")
+
+### Densely Connected Network Performance (Single Hidden Layer)
+![plt](Comparison.png?raw=true "Best")
 
