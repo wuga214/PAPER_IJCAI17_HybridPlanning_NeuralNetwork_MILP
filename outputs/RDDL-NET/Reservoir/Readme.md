@@ -18,20 +18,12 @@ Network intermediate output distribution: mean and std
 ### Data and Label
 The data and label that used to train the network, maybe useful to check
 
-### Reservoir_det
-This is determinized reservoir description file in RDDL. Please use this file to write the reward function.
 
 ### Bayesian Net
 ![plt](Bayesian_Net.png?raw=true "Reservoir")
+
+### Training vs Validating Curve
 ![plt](train_curve.png?raw=true "Reservoir")
 
-### Boosted VS no-Boosted
-Boosted MSE
-![plt](Boosted.png?raw=true "Boosted")
-
-Non-Boosted MSE
-![plt](withoutboost.png?raw=true "no-Boosted")
-
-### Densely Connected Network Performance (Single Hidden Layer)
-![plt](Comparison.png?raw=true "Best")
-
+### Boosted MSE
+![plt](Comparison.png?raw=true "Boosted")
