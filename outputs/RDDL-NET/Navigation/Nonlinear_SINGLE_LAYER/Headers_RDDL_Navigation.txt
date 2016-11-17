@@ -1,0 +1,6 @@
+N00,action,move[$x]
+N01,action,move[$y]
+N02,states,location[$x]
+N03,states,location[$y]
+D20,regular,states, location[$x]
+D21,regular,states, location[$y]
