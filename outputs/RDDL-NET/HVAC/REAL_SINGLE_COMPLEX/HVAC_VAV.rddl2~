@@ -25,7 +25,7 @@ domain hvac_vav{
   		TEMP_UP(space)		 : { non-fluent, real, default = 23.5 }; //Set an upper bound for the desired temperature range
   		TEMP_LOW(space)		 : { non-fluent, real, default = 20.0 }; //Set a lower bound for the desired temperature range
   		PENALTY 			 : { non-fluent, real, default = 20000 }; //A penalty applied when the room temperature goes beyond the desired range
-		AIR_MAX(space)		 : { non-fluent, real, default = 10.0 }; //The Maximum amount of air entering the room per min, if the HVAC is Variable Air Volume
+		AIR_MAX(space)		 : { non-fluent, real, default = 3.0 }; //The Maximum amount of air entering the room per min, if the HVAC is Variable Air Volume
 		
 		//TEMP_VAR			 : { non-fluent, real, default = 7 };	//Variance of outside temperature
 		//ROUNDS_PER_CYCLE   : { non-fluent, int, default =  };
