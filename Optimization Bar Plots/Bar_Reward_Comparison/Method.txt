@@ -1,0 +1,3 @@
+Solution_Method,Solution_Name
+0,Optimizer
+1,Fixed_Policy

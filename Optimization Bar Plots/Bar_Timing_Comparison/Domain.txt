@@ -1,0 +1,4 @@
+Domain,Domain_Name
+H,HVAC
+R,Reservoir
+N,Navigation
